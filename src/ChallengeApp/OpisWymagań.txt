@@ -1,0 +1,13 @@
+Patryk Wikłacz
+
+Opis wymagań projektu.
+
+Realizowany przeze mnie projekt odzwierciedla elektroniczny dziennik ocen ucznia.
+Użytkownik ma możliwość dodania uczniowi ocen, wyświetlenia ich oraz zebrania odpowiednich statystyk
+dotyczących owego ucznia.
+
+Po uruchomieniu programu, użytkownik jest proszony o podanie imienia ucznia, którego dziennik chce wyświetlić.
+Następnie wyświetlane jest krótkie oraz przejrzyste menu opcji, a użytkownik ma możliwość wykonać opisaną w menu operacje
+naciskając opdowiedni przycik.
+
+Program kończy swoje działanie po naciśnięciu przycisku ESC bedąc w menu opcji.
