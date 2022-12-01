@@ -2,7 +2,7 @@ namespace ChallengeApp
 {
     public class UserInterface
     {
-        public void start()
+        public void Start()
         {
             var student = EnterStudentName();
             bool start = false;
@@ -103,6 +103,5 @@ namespace ChallengeApp
                 Console.WriteLine($"{student.Name} failed to pass to the next class with a grade of {stats.Letter}!");
             }
         }
-
     }
 }

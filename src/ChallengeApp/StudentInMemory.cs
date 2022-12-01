@@ -12,6 +12,7 @@ namespace ChallengeApp
             this.grades = new List<double>();
             LowGradeAdded += IfLowGradeAdded;
         }
+
         public override void AddGrade(string s)
         {
             try
@@ -32,6 +33,7 @@ namespace ChallengeApp
                 Console.WriteLine(ex.Message);
             }
         }
+
         // public void AddGradeFromString(string s)        Metoda z zadania 8, zakomentowałem ponieważ teraz używana jest lepsza wersja.
         // {
         //     if(int.TryParse(s, out int number))
@@ -40,6 +42,7 @@ namespace ChallengeApp
         //     }
         //     else Console.WriteLine($"\"{s}\" its not a Integer!");
         // }
+
         public override Statistics GetStatistics()
         {
             var stats = new Statistics();
@@ -51,6 +54,7 @@ namespace ChallengeApp
 
             return stats;
         }
+        
         private void ChangeName(string s)
         {
             foreach (char c in s)

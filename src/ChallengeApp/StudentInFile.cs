@@ -9,6 +9,7 @@ namespace ChallengeApp
         {
             LowGradeAdded += IfLowGradeAdded;
         }
+
         public override void AddGrade(string s)
         {
             using (var writer = File.AppendText(Name + "." + filename))
@@ -37,6 +38,7 @@ namespace ChallengeApp
                 }
             }
         }
+        
         public override Statistics GetStatistics()
         {
             var stats = new Statistics();

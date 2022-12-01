@@ -17,7 +17,6 @@ public class UnitTest1
 
         var stats = student1.GetStatistics();
 
-        Assert.Equal(4.4, stats.Avarage , 1);
-        
+        Assert.Equal(4.4, stats.Avarage , 1);     
     }
 }

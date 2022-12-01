@@ -8,7 +8,7 @@ namespace ChallengeApp
         static void Main(string[] args)
         {
             var uInterface = new UserInterface();
-            uInterface.start();
+            uInterface.Start();
         }
     }
 }

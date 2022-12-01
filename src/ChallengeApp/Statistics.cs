@@ -13,6 +13,7 @@ namespace ChallengeApp
                 return this.Sum / this.Count;
             }
         }
+
         public bool WhetherPassed
         {
             get
@@ -23,25 +24,27 @@ namespace ChallengeApp
                     return false;
             }
         }
+
         public char Letter
         {
             get
             {
                 switch (Avarage)
                 {
-                    case var d when d >= 4.51:
+                    case >= 4.51:
                         return 'A';
-                    case var d when d >= 3.51:
+                    case >= 3.51:
                         return 'B';
-                    case var d when d >= 2.51:
+                    case >= 2.51:
                         return 'C';
-                    case var d when d >= 1.51:
+                    case >= 1.51:
                         return 'D';
                     default:
                         return 'F';
                 }
             }
         }
+
         public Statistics()
         {
             this.Count = 0;
@@ -49,6 +52,7 @@ namespace ChallengeApp
             this.Low = double.MaxValue;
             this.High = double.MinValue;
         }
+        
         public void Add(double number)
         {
             this.Sum += number;
@@ -57,5 +61,4 @@ namespace ChallengeApp
             this.High = Math.Max(number, this.High);
         }
     }
-
 }

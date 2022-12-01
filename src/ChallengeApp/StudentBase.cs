@@ -3,13 +3,16 @@ namespace ChallengeApp
 
     public abstract class StudentBase : Person, IStudent
     {
-        public StudentBase(string _name) : base(_name)
-        {
-        }
+        public StudentBase(string _name) : base(_name) {}
+
         public abstract event IStudent.LowGradeDelegate LowGradeAdded;
+
         public abstract void AddGrade(string s);
+
         public abstract Statistics GetStatistics();
+
         public abstract void DisplayGrades();
+
         protected virtual double GradeFromString(string s)
         {
             double d = 0;
@@ -42,6 +45,7 @@ namespace ChallengeApp
             }
             else throw new FormatException($"\"{s}\" is a invalid grade format!");
         }
+        
         protected virtual void IfLowGradeAdded(object sender, EventArgs args)
         {
             Console.WriteLine("Oh no! We should inform student’s parents about this fact");
