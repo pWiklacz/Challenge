@@ -45,7 +45,7 @@ namespace ChallengeApp
                 }
             }
         }
-        private StudentBase EnterStudentName()
+        private IStudent EnterStudentName()
         {
             while (true)
             {

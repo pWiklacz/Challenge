@@ -8,5 +8,6 @@ namespace ChallengeApp
         void AddGrade(string s);
         
         Statistics GetStatistics();
+        void DisplayGrades();
     }
 }
