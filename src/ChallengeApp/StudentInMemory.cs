@@ -51,7 +51,6 @@ namespace ChallengeApp
             {
                 stats.Add(item);
             }
-
             return stats;
         }
         
@@ -65,7 +64,6 @@ namespace ChallengeApp
                 }
                 else this.Name = s;
             }
-
         }
 
         public override void DisplayGrades()

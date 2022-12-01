@@ -9,7 +9,7 @@ namespace ChallengeApp
             {
                 return this.name;
             }
-            protected set
+             set
             {
                 this.name = value;
             }

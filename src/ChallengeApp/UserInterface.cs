@@ -45,8 +45,6 @@ namespace ChallengeApp
                 }
             }
         }
-
-
         private StudentBase EnterStudentName()
         {
             while (true)
@@ -66,10 +64,8 @@ namespace ChallengeApp
             }
         }
 
-        private void EnterGrade(StudentBase student)
+        private void EnterGrade(IStudent student)
         {
-
-
             Console.WriteLine($"Enter grade for {student.Name} : ");
             var input = Console.ReadLine();
 
@@ -77,7 +73,6 @@ namespace ChallengeApp
             {
                 Console.Clear();
                 student.AddGrade(input);
-
             }
             else
             {
@@ -86,7 +81,7 @@ namespace ChallengeApp
             }
         }
 
-        private void ShowStats(StudentBase student)
+        private void ShowStats(IStudent student)
         {
             var stats = student.GetStatistics();
             Console.WriteLine(

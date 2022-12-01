@@ -1,8 +1,7 @@
 namespace ChallengeApp
 {
-
     public abstract class StudentBase : Person, IStudent
-    {
+    { 
         public StudentBase(string _name) : base(_name) {}
 
         public abstract event IStudent.LowGradeDelegate LowGradeAdded;
